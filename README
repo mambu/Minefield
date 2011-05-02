@@ -1,0 +1,9 @@
+Minefield game
+
+Description
+This project is the famous 'minefield' game, written in C++ cross-platform. This project includes two applications: 
+•a command line application without GUI. 
+•a GUI developed with Qt libraries. 
+
+Features
+It allows to choose minefield size and difficulty level. 
