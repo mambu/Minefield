@@ -1,16 +1,19 @@
+# This file is generated automatically. Do not edit.
+# Use project properties -> Build -> Qt -> Expert -> Custom Definitions.
 TEMPLATE = app
-DESTDIR = dist/Debug/GNU-Linux-x86
+DESTDIR = dist/Debug/GNU-Linux
 TARGET = gui
 VERSION = 1.0.0
 CONFIG -= debug_and_release app_bundle lib_bundle
 CONFIG += debug 
-QT = core gui
-SOURCES += src/MainWindow.cpp ../src/Minefield.cpp main.cpp src/NewDialog.cpp src/AboutDialog.cpp
-HEADERS += ../include/Minefield.h include/AboutDialog.h include/MainWindow.h ../include/Table.h include/NewDialog.h
-FORMS += res/NewDialog.ui res/AboutDialog.ui res/MainWindow.ui
+PKGCONFIG +=
+QT = core gui widgets
+SOURCES += ../src/Minefield.cpp main.cpp src/AboutDialog.cpp src/MainWindow.cpp src/NewDialog.cpp
+HEADERS += ../include/Minefield.h ../include/Table.h include/AboutDialog.h include/MainWindow.h include/NewDialog.h
+FORMS += res/AboutDialog.ui res/MainWindow.ui res/NewDialog.ui
 RESOURCES +=
 TRANSLATIONS +=
-OBJECTS_DIR = build/Debug/GNU-Linux-x86
+OBJECTS_DIR = build/Debug/GNU-Linux
 MOC_DIR = 
 RCC_DIR = 
 UI_DIR = 

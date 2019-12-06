@@ -9,8 +9,13 @@
 #include "NewDialog.h"
 #include "AboutDialog.h"
 #include "Minefield.h"
+#if QT_VERSION >= 0x050000
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QMessageBox>
+#else
 #include <QtGui/QPushButton>
 #include <QtGui/QMessageBox>
+#endif
 #include <QSignalMapper>
 #include <QLayout>
 #include <sstream>

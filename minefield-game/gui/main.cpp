@@ -6,7 +6,11 @@
  */
 
 #include "MainWindow.h"
+#if QT_VERSION >= 0x050000
+#include <QtWidgets/QApplication>
+#else
 #include <QtGui/QApplication>
+#endif
 
 int main(int argc, char *argv[]) {
   // initialize resources, if needed
